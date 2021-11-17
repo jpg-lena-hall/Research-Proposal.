@@ -2,48 +2,56 @@
 <html>
 <head>
 <style>
+body {margin:0;}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
 }
 
 li a {
   display: block;
-  color: #000;
-  padding: 8px 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
-li a.active {
-  background-color: #04AA6D;
-  color: white;
+li a:hover:not(.active) {
+  background-color: #111;
 }
 
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+.active {
+  background-color: #2F4F4F;
 }
 </style>
+</head>
+<body>
 
 <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="intro.html">Introduction</a></li>
   <li><a href="research.html">Research</a></li>
-  <li><a class-"active" href="sources.html">Sources</a></li>
+  <li><a class="active" href="sources.html">Sources</a></li>
 </ul>
 
-	  <head>
-	    <title>Selena Hall Research Proposal</title>
-	  </head>
-		<link rel="icon" href="http://example.com/favicon.png">
-	  <body>
-	    <h1>Hon 202 Research Proposal</h1>
-		  <h3>Introduction</h3>
-		  <p style="margin-left:10%; margin-right:10%;">In this research proposal, I will be examining how quarantine has affected college students' ability to communicate.</p>
-		  <p style="margin-left:10%; margin-right:10%;">This idea is important because now that the world is opening back up after a year and a half of isolation, we’re not quite sure how to properly communicate with each other.</p>
-	  </body>
+<div style="padding:20px;margin-top:30px;background-color:#F5FFFA;height:1500px;">
+  <h1>Fixed Top Navigation Bar</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
+  <p>Some text some text some text some text..</p>
+</div>
+
 </body>
-	</html>
+</html>
